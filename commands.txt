@@ -1,0 +1,20 @@
+
+https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-20-04
+
+
+COMMANDS
+
+python3 -m venv MY_PROJECT
+**Create a new environment project
+
+source MY_PROJECT/bin/activate
+**Activate environment
+
+deactivate
+**Deactivate environment
+
+django-admin startproject django_password_generator .
+**Create new project
+
+python manage.py runserver
+**Execute project
