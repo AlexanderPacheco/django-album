@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from generator import views
+#from generator import views
+from portfolio import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('about/', views.about, name='about'),
+    #path('about/', views.about, name='about'),
     path('', views.home, name='home'),
-    path('generate-password/', views.password, name='password'), #Llamamos a esta ruta por su name, en generator/templates/generator/home.html
+    #path('generate-password/', views.password, name='password'), #Llamamos a esta ruta por su name, en generator/templates/generator/home.html
 ]
